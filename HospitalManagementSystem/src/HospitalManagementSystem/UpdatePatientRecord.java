@@ -221,7 +221,7 @@ public class UpdatePatientRecord {
 					Connection con = ConnectionProvider.getCon();
 					Statement st = con.createStatement();
 					String queryForUpdate = "update patient p join patientrecord pr on p.patientID = pr.patientID "
-							+ "set name = '" + patientID + "',"
+							+ "set name = '" + name + "',"
 							+ "contactNumber = '" + contactNo + "',"
 							+ "age = '" + age + "',"
 							+ "gender = '" + gender + "',"
